@@ -118,6 +118,12 @@ span{
     }
 .footer{
     background: tomato;
-    padding: 20px;
+    padding: 20px 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.iconholder{
     color: white;
 }
