@@ -8,6 +8,7 @@ body{
 .parent-div{
     /* border: 3px solid black; */
     display: flex;
+    margin: 0 auto;
 }
 .left-div{
     padding: 20px;
@@ -67,12 +68,13 @@ span{
         justify-content: center;
         align-items: center;
         padding: 50px;
+        margin: 0 auto;
 
 
     }
     .secondsection-left{
-        width: 350px;
-        height: 360px;
+        width: 300px;
+        height: 400px;
         background: #d9d9d9;
         padding: 40px 25px;
         text-align: center;
@@ -80,8 +82,8 @@ span{
     }
     .secondsection-right{
         margin-left: 10px;
-        width: 300px;
-        height: 420px;
+        width: 330px;
+        height: 460px;
         background: tomato;
 
     }
@@ -101,12 +103,13 @@ span{
         display: flex;
         justify-content: center;
         padding: 50px 0;
+        margin: 0 auto;
 
     }
     .thirdsection-left,
     .thirdsection-right{
-        width: 400px;
-        height: 420px;
+        width: 300px;
+        height: 430px;
     }
     .thirdsection-left{
         /* background: skyblue; */
@@ -126,4 +129,56 @@ span{
 }
 .iconholder{
     color: white;
+}
+@media screen and (max-width:900px) {
+    .right-div,
+    .left-div{
+        height: 530px;
+    }
+    .left-div{
+        width:60%;
+    }
+    .right-div{
+        width:40%
+    }
+    .header-headingtext{
+    font-size: 30px;
+    }
+    .p{
+        font-size: 16px;
+    }
+    .smart-line{
+        width: 200px;
+    }
+    .link-holder{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 25px;
+        padding-left: 40px;
+    }
+    .link-holder h4 {
+        margin-bottom: 20px;
+
+    }
+    .second-section{
+        flex-direction: column;
+    }
+    .secondsection-right{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .thirdsection{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .thirdsection-right{
+        margin-bottom: 30px;
+    }
+    .footer{
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+    .footer p{
+        text-align: center;
+    }
 }
